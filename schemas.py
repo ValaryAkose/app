@@ -1,19 +1,16 @@
 from pydantic import BaseModel, EmailStr
 
-# ==========================================
-# STUDENT SCHEMAS
-# ==========================================
+# STUDENT 
 
 class Student(BaseModel):
     name: str
     age: int
-    email: EmailStr  # Ensures emails follow standard user@domain.com formatting
+    email: EmailStr 
     country: str
     id_number: int
 
-# ==========================================
-# TEACHER SCHEMAS
-# ==========================================
+
+# TEACHER 
 
 class Teacher(BaseModel):
     name: str
@@ -22,9 +19,7 @@ class Teacher(BaseModel):
     office_room: str
     employee_id: int
 
-# ==========================================
-# COURSE SCHEMAS
-# ==========================================
+# COURSE 
 
 class Course(BaseModel):
     course_code: str

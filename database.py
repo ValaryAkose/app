@@ -45,9 +45,7 @@ def create_table():
                         teacher_id INTEGER NOT NULL
                         )''')
 
-# ==========================================
 # STUDENT FUNCTIONS (Your original code)
-# ==========================================
 
 def add_student(name, age, email, country, id_number):
     with get_db_connection() as connection:
@@ -76,9 +74,7 @@ def delete_student(id_number):
             (id_number,)
         )
 
-# ==========================================
 # TEACHER CRUD FUNCTIONS
-# ==========================================
 
 def add_teacher(name, email, department, office_room, employee_id):
     with get_db_connection() as connection:
@@ -107,9 +103,7 @@ def delete_teacher(employee_id):
             (employee_id,)
         )
 
-# ==========================================
 # COURSE CRUD FUNCTIONS
-# ==========================================
 
 def add_course(course_code, title, credit, semester, teacher_id):
     with get_db_connection() as connection:

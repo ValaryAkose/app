@@ -2,9 +2,7 @@ from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, EmailStr
 from typing import List, Dict, Any
 
-# Import functions from your custom database script
 import database as db
-#from database import create_table ,add_student,get_student,update_studen
 
 app = FastAPI(title="School Registration API")
 
